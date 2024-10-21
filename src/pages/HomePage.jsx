@@ -1,8 +1,6 @@
-const Home = () => {
-  return (
-    <div>
-      <h2 className="text-4xl text-center">Home</h2>
-    </div>
-  );
+import { ContactList } from "../components/ContactList/ContactList";
+
+const HomePage = () => {
+  return <ContactList />;
 };
-export default Home;
+export default HomePage;

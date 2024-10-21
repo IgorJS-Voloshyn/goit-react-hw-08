@@ -37,14 +37,25 @@ import HomePage from "./pages/HomePage";
 import NotFound from "./pages/NotFound";
 import RegistrationPage from "./pages/RegistrationPage";
 import LoginPage from "./pages/LoginPage";
+import ContactsPage from "./pages/ContactsPage";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { refresh } from "./redux/auth/operations";
+import { selectIsRefreshing } from "./redux/auth/selectors";
 
 const App = () => {
-  return (
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(refresh);
+  }, [dispatch]);
+  const isRefreshing = useSelector(selectIsRefreshing);
+  return isRefreshing ? null : (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="register" element={<RegistrationPage />} />
         <Route path="login" element={<LoginPage />} />
+        <Route path="contacts" element={<ContactsPage />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
