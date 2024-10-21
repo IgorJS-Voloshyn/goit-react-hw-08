@@ -1,20 +1,3 @@
-/* .container {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.link {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    list-style: none;
-} */
-
 .header {
     display: flex;
     align-items: center;
@@ -22,6 +5,7 @@
     border-bottom: 2px solid black;
     background-color: rgb(89, 89, 165);
     margin-bottom: 30px;
+    
 }
 
 .link{
@@ -34,3 +18,4 @@
       color: red;
   }
 
+  

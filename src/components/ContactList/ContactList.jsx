@@ -9,7 +9,7 @@ export function ContactList() {
   const contacts = useSelector(selectVisibleContacts);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchAll);
+    dispatch(fetchAll());
   }, [dispatch]);
 
   return (
