@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 import NotFound from "./pages/NotFound";
 import RegistrationPage from "./pages/RegistrationPage";
 import LoginPage from "./pages/LoginPage";
-import ContactsPage from "./pages/ContactsPage";
+import ContactsPage from "./pages/ContactsPage/ContactsPage";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { refresh } from "./redux/auth/operations";

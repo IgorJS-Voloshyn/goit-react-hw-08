@@ -1,21 +1,13 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     border-bottom: 2px solid black;
     background-color: rgb(89, 89, 165);
     margin-bottom: 30px;
+    gap: 50px;
     
 }
 
-.link{
-    color: black;
-  font-size: 30px;
-  font-weight: 600;
-  text-decoration: none;
-}
-  .activeLink {
-      color: red;
-  }
 
   

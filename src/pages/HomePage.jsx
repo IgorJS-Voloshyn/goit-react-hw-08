@@ -1,6 +1,4 @@
-import { ContactList } from "../components/ContactList/ContactList";
-
 const HomePage = () => {
-  return <ContactList />;
+  return <p>Home</p>;
 };
 export default HomePage;

@@ -1,20 +1,27 @@
-.link {
-    color: black;
-    font-size: 30px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.activeLink {
-    color: red;
-}
-
 .wrapper {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 30px;
 }
 
 .username {
     font-weight: 700;
+    font-size: 20px;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: rgb(224, 224, 37);
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: rgb(215, 16, 59);
+    color: #fff;
+    transform: scale(1.1);
+    transition: all 250ms;
 }
