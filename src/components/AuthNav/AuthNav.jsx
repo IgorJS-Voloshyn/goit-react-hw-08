@@ -7,7 +7,7 @@ const AuthNav = () => {
     return clsx(css.link, isActive && css.activeLink);
   };
   return (
-    <div>
+    <div className={css.container}>
       <NavLink className={buildLinkClass} to="/login">
         Login
       </NavLink>
