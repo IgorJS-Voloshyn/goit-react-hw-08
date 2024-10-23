@@ -1,9 +1,9 @@
 import { Field, Form, Formik } from "formik";
 import { useDispatch } from "react-redux";
-import css from "../LoginPage/LoginPage.module.css";
+import css from "../LoginForm/LoginForm.module.css";
 import { login } from "../../redux/auth/operations";
 
-const Login = () => {
+export const Login = () => {
   const dispatch = useDispatch();
   const initialValues = {
     email: "",
@@ -59,4 +59,3 @@ const Login = () => {
     </div>
   );
 };
-export default Login;

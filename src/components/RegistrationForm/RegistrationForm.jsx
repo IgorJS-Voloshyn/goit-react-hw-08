@@ -1,11 +1,11 @@
 import { Field, Form, Formik } from "formik";
 import { useDispatch, useSelector } from "react-redux";
 import { register } from "../../redux/auth/operations";
-import css from "../RegistrationPage/RegistrationPage.module.css";
+import css from "../RegistrationForm/RegistrationForm.module.css";
 import { Navigate } from "react-router-dom";
 import { selectIsLoggedIn } from "../../redux/auth/selectors";
 
-const Register = () => {
+export const Register = () => {
   const dispatch = useDispatch();
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const initialValues = {
@@ -78,4 +78,3 @@ const Register = () => {
     </div>
   );
 };
-export default Register;
